@@ -493,9 +493,9 @@
     #define DEFAULT_Ki_LIST {   1.38,   1.38 }
     #define DEFAULT_Kd_LIST {  68.38,  68.38 }
   #else
-    #define DEFAULT_Kp  19.41
-    #define DEFAULT_Ki   1.38
-    #define DEFAULT_Kd  68.38
+    #define DEFAULT_Kp  30.99
+    #define DEFAULT_Ki   3.51
+    #define DEFAULT_Kd  68.33
   #endif
 #endif // PIDTEMP
 
@@ -516,7 +516,7 @@
  * heater. If your configuration is significantly different than this and you don't understand
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -537,9 +537,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  #define DEFAULT_bedKp 122.45
+  #define DEFAULT_bedKi 23.14
+  #define DEFAULT_bedKd 431.98
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -742,7 +742,8 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 // E steps example: steps per revolution s=200, microstepping m=16, effective gear diameter d=10.95: sm/(πd) = 93.02
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93.02 }
+// E steps for Micro-Swiss Direct Drive: 130
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 130 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1170,11 +1171,11 @@
 
 // The size of the print bed
 #define X_BED_SIZE 358
-#define Y_BED_SIZE 370
+#define Y_BED_SIZE 367
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS  8
-#define Y_MIN_POS -1
+#define Y_MIN_POS  2
 #define Z_MIN_POS  0
 #define X_MAX_POS  X_BED_SIZE + X_MIN_POS
 #define Y_MAX_POS  Y_BED_SIZE + Y_MIN_POS
