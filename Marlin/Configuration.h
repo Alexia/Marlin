@@ -70,7 +70,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(rubienr, Creality Ender-5 Plus)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Azxiana, Creality Ender-3)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -136,7 +136,7 @@
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
-#define MACHINE_UUID "8cd276e6-41c7-4439-8f4e-f188537ebdac"
+#define MACHINE_UUID "2d626990-6db6-45fc-ab68-ba2629b4f654"
 
 // @section extruder
 
