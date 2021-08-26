@@ -60,9 +60,8 @@
 //
 // Limit Switches
 //
-#define X_STOP_PIN                            18
-#define Y_STOP_PIN                            19
-#define Z_STOP_PIN                            20
+#define X_MIN_PIN                            18
+#define X_MAX_PIN                            19
 
 //
 // Steppers
