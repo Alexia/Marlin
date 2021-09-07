@@ -51,7 +51,7 @@
 #include "temperature.h"
 
 #include "../lcd/marlinui.h"
-#include "../libs/vector_3.h"   // for matrix_3x3
+//#include "../libs/vector_3.h"   // for matrix_3x3
 #include "../gcode/gcode.h"
 #include "../MarlinCore.h"
 
@@ -243,7 +243,7 @@ typedef struct SettingsDataStruct {
   //
   // ABL_PLANAR
   //
-  matrix_3x3 planner_bed_level_matrix;                  // planner.bed_level_matrix
+  //matrix_3x3 planner_bed_level_matrix;                  // planner.bed_level_matrix
 
   //
   // AUTO_BED_LEVELING_BILINEAR

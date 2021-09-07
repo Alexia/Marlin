@@ -638,12 +638,12 @@
  * All the logical axes except for the tool (E) axis
  */
 #ifndef LINEAR_AXES
-  #define LINEAR_AXES XYZ
+  #define LINEAR_AXES XY
 #endif
 #if LINEAR_AXES >= XY
   #define HAS_Y_AXIS 1
   #if LINEAR_AXES >= XYZ
-    #define HAS_Z_AXIS 1
+    //#define HAS_Z_AXIS 1
   #endif
 #endif
 
@@ -885,7 +885,7 @@
 #if Z_HOME_DIR > 0
   #define Z_HOME_TO_MAX 1
 #elif Z_HOME_DIR < 0
-  #define Z_HOME_TO_MIN 1
+  //#define Z_HOME_TO_MIN 1
 #endif
 #if I_HOME_DIR > 0
   #define I_HOME_TO_MAX 1
