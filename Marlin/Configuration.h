@@ -602,9 +602,9 @@
     #define DEFAULT_Ki_LIST {   1.38,   1.38 }
     #define DEFAULT_Kd_LIST {  68.38,  68.38 }
   #else
-    #define DEFAULT_Kp  30.99
-    #define DEFAULT_Ki   3.51
-    #define DEFAULT_Kd  68.33
+    #define DEFAULT_Kp  35.98
+    #define DEFAULT_Ki   4.41
+    #define DEFAULT_Kd  73.41
   #endif
 #endif // PIDTEMP
 
@@ -646,9 +646,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 122.45
-  #define DEFAULT_bedKi 23.14
-  #define DEFAULT_bedKd 431.98
+  #define DEFAULT_bedKp 114.73
+  #define DEFAULT_bedKi 12.97
+  #define DEFAULT_bedKd 676.34
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -921,7 +921,7 @@
  */
 // E steps example: steps per revolution s=200, microstepping m=16, effective gear diameter d=10.95: sm/(πd) = 93.02
 // E steps for Micro-Swiss Direct Drive: 130
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 130 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 136.8 }
 
 /**
  * Default Max Feed Rate (mm/s)
