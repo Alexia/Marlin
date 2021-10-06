@@ -62,6 +62,7 @@
 //
 #define X_MIN_PIN                            18
 #define X_MAX_PIN                            19
+#define Y_STOP_PIN                           20
 
 //
 // Steppers
